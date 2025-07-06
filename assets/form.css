@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-/* 
-  CONTACT FORM EXAMPLE FOR FORMCARRY
-
-  IMPORTANT NOTE:
-  PLEASE ADD form-container class to your form element
-  to apply the styles.
-*/
-
 .form-container * {
   box-sizing: border-box;
 	font-family: "Inter", sans-serif;
