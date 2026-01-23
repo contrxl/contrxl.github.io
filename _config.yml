@@ -4,7 +4,6 @@ title: Test!
 description: >-
   Just a test!
 baseurl: "/"
-url: "https://contrxl.github.io/"
 github_username: contrxl
 
 header_pages:
