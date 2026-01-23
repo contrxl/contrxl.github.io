@@ -6,6 +6,8 @@ description: >-
 baseurl: "/"
 github_username: contrxl
 
+permalink: /:categories/:title
+
 header_pages:
   - index.md
   - about.md

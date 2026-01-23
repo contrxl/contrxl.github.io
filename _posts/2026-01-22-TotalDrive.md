@@ -1,7 +1,7 @@
 ---
 title: TotalDrive Phishing Campaign
+category: blog
 layout: post
-permalink: /totaldrive-phishing-campaign
 ---
 
 # TotalDrive Phishing Campaign
@@ -10,13 +10,13 @@ This month, I observed two unusual emails from clearly suspicious senders. The t
 2. January Community Edition: Stories That Start with People
 
 <br/>The emails have almost identical bodies. It is immediately obvious that this is an attempt to mimic the legitimate Apple iCloud storage warning email.<br/>
-<img class="size" src="images/totaldrive/MailSample.png" />
+<img class="size" src="../images/totaldrive/MailSample.png" />
 *Fig I. Sample of the mail body from the suspicious emails.*
 
 Both emails claim I am running out of "Cloud+" storage and that I must click the link to update my payment method. They also contain unsubscribe buttons, and a headquarters address for "Design Studio Fabrics". This appears to be a ficticious organisation.<br/>
-<img class="size" src="images/totaldrive/SpamInc.png" />
+<img class="size" src="../images/totaldrive/SpamInc.png" />
 *Fig II. Google Maps location showing "Spam Inc." at the HQ address for "Design Studio Fabrics"<a href="#1"><sup>1</sup></a>.*
-<img class="size" src="images/totaldrive/Hue.png" />
+<img class="size" src="../images/totaldrive/Hue.png" />
 *Fig III. "Hue by Nancy Parrish Interiors", the legitimate business that appears to reside at 530 Craghead St.*
 
 # The Redirect Chain
@@ -27,11 +27,11 @@ Clicking the link in the email to "Update Payment & Secure My Data" puts me thro
 4. <p>hxxps[://]www[.]totaldrive[.]com/get-started</p>
 
 The IPv6 address present in the first link translates to the IPv4 address 172[.]241[.]148[.]97. This then redirects you to www[.]raveelect[.]com which presents as "the ultimate performance marketing platform".<br/>
-<img class="size" src="images/totaldrive/RaveElect.png" />
+<img class="size" src="../images/totaldrive/RaveElect.png" />
 *Fig IV. The front page of www[.]raveelect[.]com*
 
 There are no obvious links or redirects from this page. I was not able to find any information on what RaveElect actually is or how it works. The second part of this URL handles click-tracking and site analytics. Once the request is sent, the following response is observed:<br/>
-<img class="size" src="images/totaldrive/Response.png" />
+<img class="size" src="../images/totaldrive/Response.png" />
 *Fig V. The response receieved when accessing link two.*
 
 This contains a unique click ID trakcer, a transaction ID, and another redirect to a third site. The third site I am taken to sets up some cookies:
@@ -45,7 +45,7 @@ This contains a unique click ID trakcer, a transaction ID, and another redirect 
 - `FRT:VIS`: Contains my unique visitor ID.
 
 <br/>The very final redirect lands me on the purchase page for the "TotalDrive" product.<br/>
-<img class="size" src="images/totaldrive/TotalDrive-Final.png" />
+<img class="size" src="../images/totaldrive/TotalDrive-Final.png" />
 *Fig VI. The TotalDrive purchase page.*
 
 This does not seem to be the first time Total Security Limited have run a shady marketing campaign like this one<a href="#3"><sup>3</sup></a>. There are various mentions of this online, the earliest I found dates back to June 16 2025<a href="#4"><sup>4</sup></a>.
