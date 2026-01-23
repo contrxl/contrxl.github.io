@@ -11,6 +11,15 @@ $container-width:      90% !default;
 $container-max-width:  600px !default;
 
 /**
+* Images
+*/
+img.size {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/**
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
