@@ -16,7 +16,7 @@ This month, I observed two unusual emails from clearly suspicious senders. The t
 Both emails claim I am running out of "Cloud+" storage and that I must click the link to update my payment method. They also contain unsubscribe buttons, and a headquarters address for "Design Studio Fabrics". This appears to be a ficticious organisation.<br/>
 <img class="size" src="images/totaldrive/SpamInc.png" />
 *Fig II. Google Maps location showing "Spam Inc." at the HQ address for "Design Studio Fabrics"<a href="#1"><sup>1</sup></a>.*
-<img width="600" height="400" src="images/totaldrive/Hue.png" />
+<img class="size" src="images/totaldrive/Hue.png" />
 *Fig III. "Hue by Nancy Parrish Interiors", the legitimate business that appears to reside at 530 Craghead St.*
 
 # The Redirect Chain
