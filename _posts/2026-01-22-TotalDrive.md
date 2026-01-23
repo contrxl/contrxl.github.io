@@ -1,6 +1,7 @@
 ---
 title: TotalDrive Phishing Campaign
 category: blog
+tags: spam, scam, phishing
 layout: post
 ---
 
