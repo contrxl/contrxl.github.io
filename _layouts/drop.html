@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<details>
+    <summary>Posts</summary>
+{% for posts in site.posts %}  
+        <a href="{{ posts.url }}">{{ posts.title }} : {{ posts.date | date: '%b %Y' %}}</a>
+{% endfor %}
+</details>
+
