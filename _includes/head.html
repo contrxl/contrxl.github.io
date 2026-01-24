@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
   {%- endunless -%}
 
+  <!-- Lunr.js for search -->
+  <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <script src="{{ "/assets/search.js" | relative_url }}"></script>
+
   {%- if site.listen_for_clients_preferred_style -%}
   <link rel="stylesheet" type="text/css" href="{{ "/assets/main.css" | relative_url }}">
   {%- else -%}
