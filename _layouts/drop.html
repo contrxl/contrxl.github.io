@@ -3,8 +3,12 @@ layout: default
 ---
 <details>
     <summary>Posts</summary>
-{% for posts in site.posts %}  
+{% for posts in site.posts %}
+    <ul>
+        <li>
         <a href="{{ posts.url }}">{{ posts.title }} : {{ posts.date | date: '%b %Y' %}}</a>
+        </li>
+    </ul>
 {% endfor %}
 </details>
 
