@@ -126,6 +126,20 @@ input[type=submit]:hover { color: var(--background-color); background-color: var
 textarea { vertical-align: top; }
 
 /**
+ * Details/Summary
+ */
+details { margin-left: 0; }
+details details { margin-left: 20px; }
+
+/**
+ * Tables
+ */
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+table, th, td { border: var(--border); }
+th, td { padding: 8px 12px; text-align: left; }
+th { font-weight: bold; }
+
+/**
  * Code and syntax highlighting
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
