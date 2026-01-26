@@ -1,8 +1,5 @@
-# Example Site settings
-
-title: Test!
 description: >-
-  Just a test!
+  A technical and cybersecurity focused blog. Covering phishing, scams, malware, and whatever else I can find.
 baseurl: "/"
 github_username: contrxl
 
