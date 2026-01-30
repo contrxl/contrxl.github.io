@@ -20,11 +20,20 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNT6QCWHBB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
 
   gtag('config', 'G-TNT6QCWHBB');
 </script>
+
+<!-- MathJax: enable inline $...$ and \(...\) math rendering -->
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','code'] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
   <!-- Lunr.js for search -->
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>

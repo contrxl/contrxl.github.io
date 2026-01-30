@@ -205,3 +205,62 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+/**
+ * GitHub-style Alerts
+ */
+.gh-alert {
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-left: 4px solid;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: $base-font-size;
+}
+
+.gh-alert strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.gh-alert p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.gh-alert-warning {
+  border-left-color: #d4a574;
+  background-color: rgba(212, 165, 116, 0.1);
+}
+
+.gh-alert-warning strong {
+  color: #d4a574;
+}
+
+.gh-alert-note {
+  border-left-color: #79c0ff;
+  background-color: rgba(121, 192, 255, 0.1);
+}
+
+.gh-alert-note strong {
+  color: #79c0ff;
+}
+
+.gh-alert-important {
+  border-left-color: #d1498f;
+  background-color: rgba(209, 73, 143, 0.1);
+}
+
+.gh-alert-important strong {
+  color: #d1498f;
+}
+
+.gh-alert-tip {
+  border-left-color: #3fb950;
+  background-color: rgba(63, 185, 80, 0.1);
+}
+
+.gh-alert-tip strong {
+  color: #3fb950;
+}
