@@ -112,6 +112,12 @@ header { margin-top: 25px; margin-bottom: 10px; border-top: var(--border); borde
 }
 
 /**
+ * Details/Summary
+ */
+summary { cursor: pointer;  font-weight: bold;  color: var(--text-color); }
+details details { margin-left: 20px; }
+
+/**
  * Form
  */
 input, select, textarea { padding: 0;  margin: 0;  -webkit-appearance: none;  -webkit-border-radius: 0;  border: none; }
