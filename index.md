@@ -30,6 +30,6 @@ You can check the [about](/about) page to find my other socials, and email addre
 
 ## When?
 
-{{ "now" | date: "%B %d, %Y at %H:%M:%S %Z" }}
+Last build time: {{ "now" | date: "%B %d, %Y at %H:%M:%S %Z" }}
 
 ## Recent Posts
