@@ -54,7 +54,7 @@ Once set, use `run` to launch the exploit and receive a Meterpreter session.
 
 # Privilege Escalation
 
-[PowerUp](https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1) can be used to search for privilege escalation routes on Windows devices. To place this on the target, run `upload /path/to/powerup.ps1`. Once the upload is complete, run `load powershell` followed by `powershell_shell` in the Meterpreter session, this will allow PowerUp to be run.
+[PowerUp](https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1) can be used to search for privilege escalation routes on Windows devices. To place this on the target, run `upload /path/to/powerup.ps1`. Once the upload is complete, run `load powershell` followed by `powershell_shell` in the Meterpreter session, this will allow `PowerUp` to be run.
 
 <img src="../images/writeups/thm/steelmountain/PowerUp.webp" />
 *Fig VI. Commands to run PowerUp and all checks.*
