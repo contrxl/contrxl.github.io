@@ -7,7 +7,7 @@ layout: post
 
 For Plantly, we get access to an online plant store. We’re given two sets of default/example user credentials to login initially and you’re able to register more accounts if needed (which I did because I killed the server more than once, oops).
 
-<img src="../images/writeups/ctf/snykftf2025/Landing.webp/ ">
+<img src="../images/writeups/ctf/snykftf2025/Landing.webp" />
 *Fig I. The landing page for the Plantly website.*
 
 Register yourself an account or sign in with the provided credentials. Heading over to “Browse Our Plans” we see some plants to add to cart, as well as a “Custom Order” field to type into.
