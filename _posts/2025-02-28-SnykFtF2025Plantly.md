@@ -30,7 +30,7 @@ We have access to the source code for this app, so we can see whats happening. I
 <img src="../images/writeups/ctf/snykftf2025/StorePy.webp" />
 *Fig V. The store.py template rendering.*
 
-We know that we can control this input, so lets test. Go back to the store and place a custom order. For your custom order, enter `“{{7*7}}”`.
+We know that we can control this input, so lets test. Go back to the store and place a custom order. For your custom order, enter {% raw %}`“{{7*7}}”`{% endraw %}.
 
 <img src="../images/writeups/ctf/snykftf2025/SSTITest.webp" />
 *Fig VI. Basic SSTI payload test in the "Custom Order" field.*
@@ -41,11 +41,11 @@ Add this to your cart, proceed to checkout, and view your receipt. You should no
 *Fig VII. Confirmation of SSTI on the receipt via "Custom Order" text.*
 
 This demonstrates that the web application is vulnerable to Server Side Template Injection (SSTI). You can read more about SSTI in Jinja2 [here](https://www.onsecurity.io/blog/server-side-template-injection-with-jinja2/) or [here](https://github.com/dgtlmoon/changedetection.io/security/advisories/GHSA-4r7v-whpg-8rx3). Now that we know the app is vulnerable to this, we can craft a simple payload to get the flag:
-
+{% raw %}
 ```python
 {{ self.__init__.__globals__.__builtins__.__import__('os').popen('cat flag.txt').read() }}
 ```
-
+{% endraw %}
 <br/>Go back to the store, insert the above payload as your “Custom Order”, proceed to checkout and view your receipt, you should see your flag displayed as your last “Custom Request”!
 
 <img src="../images/writeups/ctf/snykftf2025/FakeFlag.webp" />
