@@ -17,7 +17,7 @@ Before you begin deploying an app to Intune, you will need to download the [Micr
 - `C:\IntuneSource` : This is where you should save any app installer files as well as any installation scripts.
 - `C:\IntuneApps` : This is the folder the Content Prep Tool will output your .intunewin files to.
 
-These files can be stored anywhere and called whatever you like, as long as you know their names and paths. It is advisable to keep them grouped in a similar location for ease of access.
+<br />These files can be stored anywhere and called whatever you like, as long as you know their names and paths. It is advisable to keep them grouped in a similar location for ease of access.
 
 # Packaging your First App
 
@@ -51,7 +51,7 @@ The next step is the "**Program**" tab. Here we will specify an "**Install Comma
 - App install may force a device restart : device may restart depending on app requirements.
 - Intune will force a restart : device always restarts post-installation.
 
-The choice here is yours, typically I would set this to either "**No specific action**" for a fully silent install or "**App install may force a device restart**" if device behaviour does not matter.
+<br />The choice here is yours, typically I would set this to either "**No specific action**" for a fully silent install or "**App install may force a device restart**" if device behaviour does not matter.
 
 Intune app deployments require a "Silent Install" switch, like "`/qn`", "`/q`" or "`/s`". If your app does not support silent installation it cannot be deployed. If you are not sure what your software's silent install switch is you can run "`<installer_name.exe> /?`" in PowerShell. If this does not work then [ITNinja](https://www.itninja.com/software-library/software) can be a good resource to identify the correct switch.<br />
 
