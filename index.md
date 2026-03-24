@@ -18,8 +18,6 @@ A place where I'll keep notes, writeups, articles and tutorials. This serves as 
 
 Recent posts will appear below, these will consist of security research blogs, analysis and tutorials. The [notes](/notes) page holds all of my documentation from TryHackMe certifications and any other training courses I may do. None of this information is directly referencing any exam material, only study notes I used before and during the tests.
 
-Everything from my existing site [here](https://knowledge.contrxl.tech) will be migrated here eventually.
-
 ## Why?
 
 The goal of this site is both to help me understand a bit more about development, and to encourage myself to continue researching and learning. If this can help others along the way, that's great.
