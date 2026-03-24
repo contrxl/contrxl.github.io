@@ -5,6 +5,8 @@ tags: snyk, fetch-the-flag, ftf, writeup, ctf
 layout: post
 ---
 
+# Plantly
+
 For Plantly, we get access to an online plant store. We’re given two sets of default/example user credentials to login initially and you’re able to register more accounts if needed (which I did because I killed the server more than once, oops).
 
 <img src="../images/writeups/ctf/snykftf2025/Landing.webp" />
