@@ -89,7 +89,7 @@ Navigating directly to the hxxps[://]yanepidor link in the payload pulls a binar
 <img src="../images/clickfix/InfoUpdate.png" />
 *Fig II. Basic file info for `update.exe`*
 
-The sample appears on VirusTotal<a href="#3"><sup>3</sup></a>, and I uploaded it to MalwareBazaar<a href="#4"><sup>4</sup></a>. Based on an AnyRun analysis<a href="#5"><sup>5</sup></a> of the binary, it looks to be Vidar Stealer, reaching out to a C2 server potentially hosted at hxxps[://]gin[.]websitearaxa[.]com (188[.]114[.]96[.]3)<a href="#6"><sup>6</sup></a>. Additional DNS requests were also seen to 188[.]114[.]97[.]3.
+The sample appears on VirusTotal<a href="#3"><sup>3</sup></a>, and I uploaded it to MalwareBazaar<a href="#4"><sup>4</sup></a>. Based on an AnyRun analysis<a href="#5"><sup>5</sup></a> of the binary, it looks to be Vidar Stealer, reaching out to a C2 server potentially hosted at hxxps[://]gin[.]websitearaxa[.]com.
 
 The indicators presented below were observed here, but as noted above, there are currently hundreds of these fake/compromised domains live online.
 
@@ -106,14 +106,9 @@ The indicators presented below were observed here, but as noted above, there are
 # Indicators - C2
   - gin[.]websitearaxa[.]com -> Likely C2 server. 
 
-# Indicators - IP Address
-  - 188[.]114[.]96[.]3 -> Likely C2 server IP.
-  - 188[.]114[.]97[.]3 -> Likely C2 server IP.
-
 # References
 <p id="1"> [1] https://x.com/banthisguy9349/status/2045148606962024875
 <p id="2"> [2] https://x.com/blackbigswan/status/2044403038392098847
 <p id="3"> [3] https://www.virustotal.com/gui/file/4039f4b7894969cd03b96e0e004b2da18445e24eb6dbfdec09a1a0de685e4215
 <p id="4"> [4] https://bazaar.abuse.ch/sample/4039f4b7894969cd03b96e0e004b2da18445e24eb6dbfdec09a1a0de685e4215/
 <p id="5"> [5] https://app.any.run/tasks/a9723e42-fc37-4c86-9996-a67cf099db58
-<p id="6"> [6] https://www.shodan.io/host/188.114.96.3
