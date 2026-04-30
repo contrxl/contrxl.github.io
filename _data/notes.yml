@@ -79,3 +79,8 @@ pt1:
         path: "thm/pt1/additionalrooms/ad"
       - name: "Report Writing"
         path: "thm/pt1/additionalrooms/reporting"
+other:
+  - name: "AI Security"
+    subsections:
+      - name : "Prompt Security"
+        path: "thm/aisecurity"

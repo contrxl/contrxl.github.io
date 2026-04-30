@@ -48,3 +48,24 @@ permalink: /notes
 {% endfor %}
 </details>
 {% endfor %}
+
+# TryHackMe Other Rooms/Challenges
+
+{% for section in site.data.notes.other %}
+<details>
+<summary>{{ section.name }}</summary>
+{% for subsection in section.subsections %}
+<details>
+<summary>{{ subsection.name }}</summary>
+{% assign docs = site.pages | where_exp: "page", "page.path contains subsection.path" | sort: "path" %}
+{% if docs.size > 0 %}
+<ol>
+{% for page in docs %}
+  <li><a href="{{ page.url }}">{{ page.title | default: page.name }}</a></li>
+{% endfor %}
+</ol>
+{% endif %}
+</details>
+{% endfor %}
+</details>
+{% endfor %}
